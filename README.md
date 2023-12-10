@@ -9,4 +9,4 @@ The invoices send to customers have the following features:
 - Allows client to print page with simple button
 
 
-![example](https://github.com/seabee33/invoiceSystem/assets/85791528/41062cac-f880-4d44-8b40-b5a36d492dbc)
+![example](https://github.com/seabee33/invoiceSystem/assets/85791528/289a851b-f681-43ce-98cd-84713e29be38)
