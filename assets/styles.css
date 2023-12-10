@@ -1,0 +1,113 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	padding: 20px 20px;
+	background-color: rgb(237, 251, 255);
+	font-family: sans-serif;
+}
+
+.invoiceBox{
+	max-width: 900px;
+	border: 1px solid grey;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	padding:30px;
+	-webkit-print-color-adjust: exact;
+	color-adjust: exact;
+}
+
+.rowSplit{
+	display: flex;
+	justify-content: space-between;
+	margin: 0px 0px 30px 0px;
+}
+.rowSplit2{
+	display: flex;
+	justify-content: space-between;
+	margin: 0px 0px 10px 0px;
+}
+.rowSplit2 span{
+	margin: 0px 0px 0px 20px;
+}
+
+.topRowLine{
+	background-color: red;
+	display: flex;
+}
+
+.topRow{
+	line-height:35px;
+}
+
+.topRow p{
+	display: flex;
+}
+
+.topRow p img{
+	margin: 0px 15px 0px 0px;
+}
+
+.itemRow{
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 0px 20px 0px;
+	border-bottom: 1px solid rgb(196, 196, 196);
+	margin: 0px 0px 20px 0px;
+}
+.itemRow div p:first-child{
+	background-color:rgb(134, 184, 219);
+	color:rgb(19, 19, 19);
+	padding:10px;
+}
+
+.itemRow2{
+	display: flex;
+	justify-content: space-around;
+	padding: 0px 0px 20px 0px;
+	border-bottom: 1px solid rgb(196, 196, 196);
+	margin: 0px 0px 20px 0px;
+	text-align: center;
+}
+.itemRow2 div p:first-child{
+	background-color:rgb(134, 184, 219);
+	color:rgb(19, 19, 19);
+	padding:10px;
+}
+
+.itemRow div p:not(:first-child){
+	padding: 10px 0px 0px 10px;
+}
+
+.paymentBit{
+	width: 300px;
+	font-size: 20px;
+}
+.paymentBit p{
+	display: flex;
+	justify-content: space-between;
+}
+
+.topButtons{
+	margin: 0px 0px 20px 10px;
+	display:block;
+}
+.topButtons p a {
+	margin: 0px 20px 0px 0px;
+}
+
+
+.companyIcon{
+	width:200px;
+	border-radius:20px;
+}
+
+@media(max-width: 620px){
+	.companyIcon{
+		width:20vw;
+	}
+}
