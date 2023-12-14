@@ -145,12 +145,13 @@ if(isset($_GET['InvoiceID'])){
 				$itemGST = round($itemGST,2);
 
 				$totalGST = $totalGST + $itemGST;
-				$totalNet = $totalNet + ($totalItemCost - $totalGST);
 				$totalIncGST = $totalIncGST + $totalItemCost;
 
 				echo "<script> console.log('$totalGST')</script>";
 				echo "<p> $$itemGST </p>";
-			} ?>
+			} 
+				$totalNet = $totalIncGST - ($totalIncGST / 11);
+			?>
 		</div>
 		<div style="flex:1">
 			<p>Amount</p>
